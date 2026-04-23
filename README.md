@@ -2,6 +2,21 @@
 
 ## Dependencies
 
+### Using pixi
+
+Install pixi:  
 ```bash
-micromamba create -n jupyterlab3 python=3.10.11 pytorch torchvision torchaudio "cuda-version>=12.8,<13" transformers diffusers accelerate jupyterlab numpy -c pytorch -c conda-forge -c nvidia -y
+curl -fsSL https://pixi.sh/install.sh | bash
+```
+
+Start with pixi:  
+```bash
+pixi install
+pixi shell
+```
+
+### Using Micromamba
+```bash
+micromamba create -n jupyterlab3 python=3.10.11 jupyterlab -c pytorch -c conda-forge -c nvidia -y
+micromamba run -n jupyterlab3 pip install -r requirements.txt
 ```
