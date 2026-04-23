@@ -6,9 +6,13 @@ platforms = ["linux-64"]
 
 [dependencies]
 python = "3.10.*"
-pytorch = {version = "==2.0.1", channel = "pytorch"}
-torchvision = {version = "==0.15.2", channel = "pytorch"}
-torchaudio = {version = "==2.0.2", channel = "pytorch"}
+pytorch = "==2.0.1"
+torchvision = "==0.15.2"
+torchaudio = "==2.0.2"
+
+# pytorch = {version = "==2.0.1", channel = "pytorch"}
+# torchvision = {version = "==0.15.2", channel = "pytorch"}
+# torchaudio = {version = "==2.0.2", channel = "pytorch"}
 
 [pypi-dependencies]
 numpy = ">=1.22.4"
