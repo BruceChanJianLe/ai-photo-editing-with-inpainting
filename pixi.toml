@@ -1,0 +1,42 @@
+[workspace]
+name = "ai-photo-editing-with-inpainting"
+version = "0.0.0"
+channels = ["pytorch", "nvidia", "conda-forge"]
+platforms = ["linux-64"]
+
+[dependencies]
+python = "3.10.*"
+pytorch = {version = "==2.0.1", channel = "pytorch"}
+torchvision = {version = "==0.15.2", channel = "pytorch"}
+torchaudio = {version = "==2.0.2", channel = "pytorch"}
+
+[pypi-dependencies]
+numpy = ">=1.22.4"
+scipy = "==1.11.2"
+pandas = "==2.2.1"
+matplotlib = "==3.8.3"
+networkx = ">=3.1"
+sympy = ">=1.12"
+tokenizers = "==0.15.2"
+sentencepiece = "==0.2.0"
+safetensors = "==0.4.2"
+pyyaml = "==6.0.1"
+tqdm = "==4.66.2"
+requests = ">=2.31.0"
+packaging = "==24.0"
+regex = "==2023.12.25"
+transformers = "==4.36.0"
+accelerate = "==0.25.0"
+diffusers = "==0.24.0"
+peft = "==0.5.0"
+optimum = "==1.12.0"
+auto-gptq = "==0.4.2"
+bitsandbytes = "==0.41.1"
+gradio = "<=3.50.2"
+ema-pytorch = "==0.3.1"
+datasets = "==2.18.0"
+huggingface-hub = "==0.21.4"
+fastapi = "==0.110.0"
+uvicorn = "==0.28.0"
+rouge = "==1.0.1"
+pillow = ">=9.4.0"
